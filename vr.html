@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>VR Therapy App</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="script.js" defer></script>
+</head>
+<body>
+    <header>
+        <div class="logo">VR Therapy</div>
+        <nav>
+            <ul>
+                <li><a href="#Home" onclick="scrollToSection('home')">Home</a></li>
+                <li><a href="#Sessions" onclick="scrollToSection('sessions')">Sessions</a></li>
+                <li><a href="#Contact" onclick="scrollToSection('contact')">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section id="home" class="hero">
+            <h1>Welcome to Virtual Reality Therapy</h1>
+            <p>Experience innovative therapeutic healing in a virtual environment.</p>
+            <button onclick="scrollToSection('sessions')">Explore Sessions</button>
+        </section>
+
+        <section id="sessions">
+            <h2>Select a Therapy Session</h2>
+            <div class="session-card" onclick="startSession('mindfulness')">
+                <h3>Mindfulness Meditation</h3>
+                <p>Engage in guided meditation in a serene virtual landscape.</p>
+            </div>
+            <div class="session-card" onclick="startSession('exposure')">
+                <h3>Exposure Therapy</h3>
+                <p>Confront your fears in a controlled, virtual environment.</p>
+            </div>
+            <div class="session-card" onclick="startSession('relaxation')">
+                <h3>Relaxation Techniques</h3>
+                <p>Learn relaxation techniques in a calming virtual setting.</p>
+            </div>
+        </section>
+
+        <section id="contact">
+            <h2>Contact Us</h2>
+            <p>For more information, reach out to us at <a href="mailto:info@vrtherapy.com">info@vrtherapy.com</a>.</p>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2024 Virtual Reality Therapy. All rights reserved.</p>
+    </footer>
+</body>
+</html>
